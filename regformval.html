@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+  <title>Welcome To Registration Form</title>
+  <style>
+     /* body css for whole page */
+	 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+     body
+    {
+	    margin:0px;
+	    background:linear-gradient(145deg,rgb(138, 135, 235),rgb(203, 12, 178));
+	    font-family:Arial, Helvetica, sans-serif;
+    }
+    
+    #main{
+     width:600px; 
+     height:auto; overflow:hidden; padding-bottom:20px; margin-left:auto; margin-right:auto; 
+     border-radius:50px; 
+     padding-left:10px; margin-top:100px;
+     border:4px solid #05a9c6; 
+     padding-top:20px;
+    }
+    
+    #main table{
+        font-family:"Comic Sans MS", cursive;}
+    /* css code for textbox */
+    #main .tb{height:28px; width:230px; border:1px solid #fa10e3; color:#1a0415; font-weight:bold;  opacity:0.9;}
+    #main .tb:focus{height:28px; border:5px solid #e01cc6; outline:none; border-left:10px solid #ed11be;}
+
+    /* css code for button*/
+    #main .btn{
+        width:150px; height:32px; 
+        color:#111114; 
+        font-weight:bold; 
+        border:6px solid #880572; 
+        text-shadow: 0px 0.5px 0.5px rgb(28, 16, 205); 
+        border-radius: 2px; font-weight: 600; color: #0c0c0f; letter-spacing: 1px; 
+        font-size:14px; background:linear-gradient(145deg,rgb(196, 15, 202),rgb(41, 171, 207)); 
+        -webkit-transition: 1s; -moz-transition: 1s; transition: 1s;
+        border-radius: 60px;}
+  
+    #main .btn:hover{background-color:#1a171a; outline:none;  border-radius: 2px; color:#3617d3; border:1px solid #c70fc7;
+    -webkit-transition: 1s; -moz-transition: 1s; transition: 1s; }
+	
+  </style>
+  </head>
+
+	<body>
+	<!-- Main div code -->
+    <center><h1><marquee>REGISTRATION FORM</h1></marquee></center>
+	<div id="main">
+	<div class="h-tag">
+	<h3><center>CREATE YOUR ACCOUNT</center></h3>
+	</div>
+	<!-- create account div -->
+	<div class="login">
+	<table cellspacing="2" align="center" cellpadding="8" border="0">
+	<tr>
+	<td align="right">ENTER NAME:</td>
+	<td><input type="text" placeholder="Enter user here" id="t1" class="tb"/></td>
+	</tr>
+	<tr>
+	<td align="right">ENTER EMAIL ID :</td>
+	<td><input type="text" placeholder="Enter Email ID here" id="t2" class="tb"/></td>
+	</tr>
+	<tr>
+	<td align="right">ENTER USERNAME :</td>
+	<td><input type="text" placeholder="Enter Username here" id="t3" class="tb"/></td>
+	</tr>
+	<tr>
+	<td align="right">ENTER PASSWORD:</td>
+	<td><input type="password" placeholder="Enter Password here" id="t4" class="tb"/></td>
+	</tr>
+	<tr>
+	<td align="right">ENTER CONFIRM PASSWORD:</td>
+	<td><input type="password" placeholder="Enter Password here" id="t5" class="tb"/></td>
+	</tr>
+	<tr>
+	<td></td>
+	<td>
+	<input type="reset" value="Clear Form" onclick="clearFunc()" id="res" class="btn"/>
+	<input type="submit" value="Create Account" class="btn" onclick="registration()"/></td>
+	</tr>
+	</table>
+    <H3>IF YOU HAVE ALREADY ACCOUNT?<a href="loginformval.html">LOGIN</a></H3>
+	</div>
+	<!-- create account box ending here.. -->
+	</div>
+	<!-- Main div ending here... -->
+    <script src="regscript.js"></script>
+	</body>
+	</html>
